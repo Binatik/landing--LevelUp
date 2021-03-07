@@ -1,0 +1,295 @@
+.promoDJ__body {
+    margin-top: 35px;
+}
+
+.promoDJ__item {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    transition: 0.1s;
+}
+
+.promoDJ__item:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 17%);
+    border-color: #fff;
+}
+
+.promoDJ__title {
+    color: #000;
+}
+
+.promoDJ__group {
+    margin-bottom: 40px;
+}
+
+.promoDJ__img {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.promoDJ__list {
+    align-self: start;
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+.promoDJ__list-item {
+    margin-bottom: 10px;
+}
+
+.promoDJ__text {
+    color: #ff7800;
+}
+
+.promoDJ__button {
+    background-color: #ff7800;
+    color: #fff;
+}
+
+.promoDJ__button:hover {
+    background-color: #000;
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video__promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+}
+
+.promoDJ__item:nth-child(1) {
+    margin-bottom: 40px;
+    margin-right: 0;
+}
+
+.structure {
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+.structure:before {
+    position: absolute;
+    content: '';
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 0 0, 100% 0, 75% 75%, 76% 100%, 25% 100%, 100% 100%, 100% 0%);
+    background-color: rgba(0, 83, 185, 0.1);
+    width: 100%;
+    height: 100%;
+}
+
+.structure__body {
+    margin-top: 50px;
+}
+
+.structure__list {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.structure__item {
+    position: static;
+    z-index: 10;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.structure__item:nth-child(1) {
+    order: 0;
+}
+
+.structure__group {
+    padding: 10px;
+    border: 1px solid #ff7800;
+    background-color: #f4f4f4;
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.structure__card-svg {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    fill: #ff7800;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.structure__text {
+    margin-left: 20px;
+    color: #0053b9;
+    display: none;
+}
+
+.structure__img-container {
+    position: relative;
+}
+
+.structure__img-prod {
+    position: relative;
+    z-index: 3;
+    margin: 0 30px;
+    width: 150px;
+}
+
+.structure__button {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.structure__button:hover {
+    box-shadow:1px 1px 60px 0 rgba(0,0,0,0.24);
+}
+
+.structure__text_inverse {
+    order: -1;
+    margin-left: 0;
+}
+
+.structure__line {
+    display: none;
+}
+
+.structure__line:before,
+.structure__line:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #ff7800;
+    width: 300px;
+    height: 1px;
+}
+
+.structure__line:nth-child(4):before {
+    top: 70px;
+    transform: rotate(40deg) translate(-105px, 74px);
+    left: 50%;
+    width: 100px;
+}
+
+.structure__line:nth-child(4):after {
+    top: 70px;
+    transform: rotate(-40deg) translate(40px, 11px);
+    right: 40%;
+    width: 100px;
+}
+
+.structure__line:nth-child(5):before {
+    top: 70px;
+    transform: rotate(40deg) translate(160px, 145px);
+    left: 50%;
+    width: 100px;
+}
+
+.structure__line:nth-child(6):after {
+    top: 70px;
+    transform: rotate(-40deg) translate(-240px, 80px);
+    left: 50%;
+    width: 100px;
+}
+
+.reviews {
+    position: relative;
+}
+
+.reviews__cards {
+    margin-top: 50px;
+}
+
+.reviews__user-img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.reviews__sub-title {
+    color: #0053b9;
+    margin-bottom: 20px;
+}
+
+.reviews__swipe-btn {
+    color: #ff7800;
+    outline: none;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+}
+
+.reviews__swipe-btn:hover {
+    color: #000;
+}
+
+
+/* @media  запросы. От 768px и выше. (Планшет) */
+@media (min-width: 768px) {
+    .promoDJ__item {
+        width: 400px;
+    }
+
+    .video {
+        width: 100%;
+        padding-bottom: 36.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    }
+
+    .promoDJ__item:nth-child(1) {
+        margin-right: 30px;
+    }
+
+    .promoDJ__img {
+        width: 200px;
+    }
+
+    .promoDJ__list {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .structure__item:nth-child(1) {
+        order: 1;
+    }
+
+    .structure__item {
+        margin-bottom: 0;
+    }
+
+    .structure__group {
+        width: 250px;
+    }
+
+    .structure__card-svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .structure__text {
+        display: block;
+    }
+
+    .structure__text_inverse {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .structure__line {
+        display: inline-block;
+    }
+}

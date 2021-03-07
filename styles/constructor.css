@@ -1,0 +1,69 @@
+/* Все mobile стили. Вход ниже 768px */
+
+.center-items-f {
+    display: flex;
+    justify-content: center;
+}
+
+.between-items-f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-items-f {
+    display: flex;
+    justify-content: start;
+}
+
+.right-items-f {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.agn-c {
+    align-items: center;
+}
+
+.agn-l {
+    align-items: start;
+}
+
+.agn-r {
+    align-items: flex-end;
+}
+
+.wrap-f {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* column */
+.co-f {
+    display: flex;
+    flex-direction: column;
+}
+
+/* row */
+.ro-f {
+    display: flex;
+    flex-direction: row;
+}
+
+.inline-center {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* @media  запросы. От 768px и выше. (Планшет) */
+@media (min-width: 768px) {
+    /* column */
+    .co-f {
+        flex-direction: row;
+    }
+
+    /* row */
+    .ro-f {
+        flex-direction: column;
+    }
+}
