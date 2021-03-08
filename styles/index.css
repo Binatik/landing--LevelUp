@@ -267,6 +267,77 @@
     color: #ff7800;
 }
 
+.order__body {
+    margin-top: 50px;
+}
+
+.order__main {
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.order__main-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.order__price {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.order__text {
+    font-weight: 400;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: #ff7800;
+}
+
+.new-price {
+    display: inline-block;
+    margin-right: 30px;
+    animation: newPrice 2s infinite;
+    font-size: 30px;
+    color: #ff7800;
+}
+
+.order__form {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.order__lab {
+    margin-bottom: 50px;
+}
+
+.order__main {
+    text-align: center;
+}
+
+@keyframes newPrice {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+   75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 /* @media  запросы. От 768px и выше. (Планшет) */
 @media (min-width: 768px) {
@@ -332,6 +403,16 @@
 
     .promo__group {
         margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .order__main-img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    .order__form {
         margin-left: 30px;
     }
 }

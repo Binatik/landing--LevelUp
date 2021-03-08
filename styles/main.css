@@ -35,6 +35,7 @@
     padding: 10px 15px;
     width: 100%;
     z-index: 3;
+    outline: none;
     text-decoration: none;
     color: #fff;
     border: 1px solid transparent;
@@ -62,6 +63,37 @@
     font-size: 26px;
     min-height: 70px;
 }
+
+.input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ff7800;
+    color: #0053b9;
+}
+
+.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.1s ease; color: #0053b9;}
+.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+
+.d-title {
+    position: relative;
+}
+
+.d-title:hover::after {
+    position: absolute;
+    padding: 5px;
+    font-size: 12px;
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    content: attr(data-title);
+    right: 5px;
+    top: 5px;
+    min-height: 10px;
+    z-index: 15;
+}
+
 
 /* @media  запросы. От 768px и выше. (Планшет) */
 @media (min-width: 768px) {

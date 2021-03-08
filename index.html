@@ -34,11 +34,11 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="promoDJ__button button button-small center-items-f agn-c" href="#">Заказать</a>
+                        <a class="promoDJ__button button button-small center-items-f agn-c" href="#order">Заказать</a>
                     </div>
                     <div class="promoDJ__item video">
                         <iframe class="video__promo" width="560" height="315"
-                                src="https://www.youtube.com/embed/6hb6V49pqv4"
+                                src="https://www.youtube.com/embed/u2fqMiUdCGc"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
                     </div>
@@ -86,7 +86,7 @@
                         <span class="structure__line line"></span>
                         <span class="structure__line line"></span>
                     </div>
-                    <a class="structure__button button button-large center-items-f agn-c" href="#">Заказать</a>
+                    <a class="structure__button button button-large center-items-f agn-c" href="#order">Заказать</a>
                 </div>
             </div>
         </div>
@@ -150,12 +150,44 @@
                                     <p class="promo__text text">Простой</p>
                                 </li>
                             </ul>
-                            <a class="button button-large center-items-f agn-c" href="#">Заказать</a>
+                            <a class="button button-large center-items-f agn-c" href="#order">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="order">
+            <div class="wrapper">
+                <div class="order__body">
+                    <h2 class="order__title title"></h2>
+                    <div class="order__timer"></div>
+                    <div class="order__group between-items-f co-f">
+                        <div class="order__main" data-title="Фото">
+                            <img class="order__main-img" src="./fonts/prod.png" alt="prod">
+                            <div class="order__price">
+                                <span class="order__text text new-price">1 790 ₽</span>
+                                <span class="order__text text old-price">2 999 ₽</span>
+                            </div>
+                        </div>
+                        <form class="order__form between-items-f  coMD-f" action="#">
+                            <label class="order__lab customization-input" data-title="Ваше имя">
+                                <input class="order__input input text"
+                                       type="text" id="name"
+                                       placeholder="Имя"
+                                >
+                            </label>
+                            <label class="order__lab customization-input" data-title="Номер телефона">
+                                <input class="order__input input text"
+                                       type="text" id="phone"
+                                       placeholder="Телефон"
+                                >
+                            </label>
+                            <input class="button button-small" id="order" type="submit" value="заказать">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
